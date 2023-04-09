@@ -23,7 +23,7 @@ var humchat = document.querySelector(".prepy-bodychats");
             
     const net = new brain.recurrent.LSTM();
 
-    fetch("https://apdeprog291278.github.io/Prepy%20(123).json")
+    fetch("./Prepy.json")
     .then((response) => response.json())
     .then((json) => {
         net.fromJSON(json);

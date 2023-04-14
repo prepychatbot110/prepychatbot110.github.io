@@ -26,7 +26,6 @@ span{
 body{
     padding: 0;
     margin: 0;
-    overflow-y: hidden;
 }
 
 .container{
@@ -41,7 +40,7 @@ body{
 .prepy-chat-interface{
     border: 1px solid #bebbbb;
     width: 40%;
-    height: 88%;
+    height: auto;
     border-radius: 1em;
     display: flex;
     flex-direction: column;

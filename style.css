@@ -45,6 +45,7 @@ body{
     border-radius: 1em;
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 .prepy-title{
@@ -62,9 +63,10 @@ body{
 
 .prepy-bodychats{
     width: 100%;
-    height: 100vh;
-    max-height: 83%;
+    /*height: 100vh;
+    max-height: 83%;*/
     overflow-y: scroll;
+    flex-grow: 1;
 }
 
 .prepy-bodychats::-webkit-scrollbar{
@@ -123,7 +125,7 @@ body{
 
 .prepy-bodymsg{
     width: 100%;
-    height: 4.2em;
+    min-height: 4.2em !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,51 +173,6 @@ textarea::-webkit-scrollbar-thumb{
 
     .prepy-bodymsg{
         border-radius: 0;
-    }
-
-    
-}
-
-@media only screen and (max-height: 1135216640px) {
-
-    .prepy-bodychats{
-        max-height: 93%;
-    }
-
-    
-}
-
-@media only screen and (max-height: 1527px) {
-
-    .prepy-bodychats{
-        max-height: 90%;
-    }
-
-    
-}
-
-@media only screen and (max-height: 1040px) {
-
-    .prepy-bodychats{
-        max-height: 85%;
-    }
-
-    
-}
-
-@media only screen and (max-height: 712px) {
-
-    .prepy-bodychats{
-        max-height: 80%;
-    }
-
-    
-}
-
-@media only screen and (max-height: 515px) {
-
-    .prepy-bodychats{
-        max-height: 75%;
     }
 
     
